@@ -6,7 +6,8 @@ services:
 language: go
 
 go:
-  - '1.7.1'
+  - '1.7.5'
+
 
 after_success:
   - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go
